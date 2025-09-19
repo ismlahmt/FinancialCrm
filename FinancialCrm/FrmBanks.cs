@@ -44,7 +44,21 @@ namespace FinancialCrm
         {
             FrmBilling frm = new FrmBilling();
             frm.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void btnFrmDashboard_Click(object sender, EventArgs e)
+        {
+            frmDashboard frm = new frmDashboard();
+            frm.Show();
+            this.Close();
+        }
+
+        private void btnFrmExit_Click(object sender, EventArgs e)
+        {
+            FrmBanks frm = new FrmBanks();
+            frm.Close();
+            this.Close();
         }
     }
 }

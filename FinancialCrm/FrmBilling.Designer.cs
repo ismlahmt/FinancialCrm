@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnFrmExit = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnFrmDashboard = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnBanksForm = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtBillId = new System.Windows.Forms.TextBox();
-            this.txtBillTitle = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBillAmount = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnUpdateBill = new System.Windows.Forms.Button();
+            this.btnDeleteBill = new System.Windows.Forms.Button();
+            this.btnCreateBill = new System.Windows.Forms.Button();
+            this.btnBillList = new System.Windows.Forms.Button();
             this.txtBillPeriod = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBillList = new System.Windows.Forms.Button();
-            this.btnCreateBill = new System.Windows.Forms.Button();
-            this.btnDeleteBill = new System.Windows.Forms.Button();
-            this.btnUpdateBill = new System.Windows.Forms.Button();
+            this.txtBillAmount = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBillTitle = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBillId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,9 +61,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btnFrmExit);
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btnFrmDashboard);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -74,17 +74,18 @@
             this.panel1.Size = new System.Drawing.Size(386, 826);
             this.panel1.TabIndex = 1;
             // 
-            // button8
+            // btnFrmExit
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
-            this.button8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(69, 584);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(248, 52);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Çıkış Yap";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnFrmExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
+            this.btnFrmExit.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFrmExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFrmExit.Location = new System.Drawing.Point(69, 584);
+            this.btnFrmExit.Name = "btnFrmExit";
+            this.btnFrmExit.Size = new System.Drawing.Size(248, 52);
+            this.btnFrmExit.TabIndex = 7;
+            this.btnFrmExit.Text = "Çıkış Yap";
+            this.btnFrmExit.UseVisualStyleBackColor = false;
+            this.btnFrmExit.Click += new System.EventHandler(this.btnFrmExit_Click);
             // 
             // button7
             // 
@@ -98,17 +99,18 @@
             this.button7.Text = "Ayarlar";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnFrmDashboard
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
-            this.button6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(69, 430);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(248, 52);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Dashboard";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnFrmDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
+            this.btnFrmDashboard.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFrmDashboard.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFrmDashboard.Location = new System.Drawing.Point(69, 430);
+            this.btnFrmDashboard.Name = "btnFrmDashboard";
+            this.btnFrmDashboard.Size = new System.Drawing.Size(248, 52);
+            this.btnFrmDashboard.TabIndex = 5;
+            this.btnFrmDashboard.Text = "Dashboard";
+            this.btnFrmDashboard.UseVisualStyleBackColor = false;
+            this.btnFrmDashboard.Click += new System.EventHandler(this.btnFrmDashboard_Click);
             // 
             // button5
             // 
@@ -133,6 +135,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Giderler";
             this.button4.UseVisualStyleBackColor = false;
+//            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -190,70 +193,56 @@
             this.panel2.Size = new System.Drawing.Size(1121, 288);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
+            // btnUpdateBill
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(392, 318);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1121, 479);
-            this.panel3.TabIndex = 3;
+            this.btnUpdateBill.BackColor = System.Drawing.Color.Silver;
+            this.btnUpdateBill.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdateBill.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdateBill.Location = new System.Drawing.Point(865, 219);
+            this.btnUpdateBill.Name = "btnUpdateBill";
+            this.btnUpdateBill.Size = new System.Drawing.Size(198, 52);
+            this.btnUpdateBill.TabIndex = 11;
+            this.btnUpdateBill.Text = "Ödeme Güncelle";
+            this.btnUpdateBill.UseVisualStyleBackColor = false;
+            this.btnUpdateBill.Click += new System.EventHandler(this.btnUpdateBill_Click);
             // 
-            // label1
+            // btnDeleteBill
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(35, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ödeme Id:";
+            this.btnDeleteBill.BackColor = System.Drawing.Color.Silver;
+            this.btnDeleteBill.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDeleteBill.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDeleteBill.Location = new System.Drawing.Point(628, 219);
+            this.btnDeleteBill.Name = "btnDeleteBill";
+            this.btnDeleteBill.Size = new System.Drawing.Size(198, 52);
+            this.btnDeleteBill.TabIndex = 10;
+            this.btnDeleteBill.Text = "Ödeme Sil";
+            this.btnDeleteBill.UseVisualStyleBackColor = false;
+            this.btnDeleteBill.Click += new System.EventHandler(this.btnDeleteBill_Click);
             // 
-            // txtBillId
+            // btnCreateBill
             // 
-            this.txtBillId.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtBillId.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBillId.Location = new System.Drawing.Point(157, 13);
-            this.txtBillId.Name = "txtBillId";
-            this.txtBillId.Size = new System.Drawing.Size(906, 37);
-            this.txtBillId.TabIndex = 1;
+            this.btnCreateBill.BackColor = System.Drawing.Color.Silver;
+            this.btnCreateBill.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCreateBill.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCreateBill.Location = new System.Drawing.Point(403, 219);
+            this.btnCreateBill.Name = "btnCreateBill";
+            this.btnCreateBill.Size = new System.Drawing.Size(198, 52);
+            this.btnCreateBill.TabIndex = 9;
+            this.btnCreateBill.Text = "Yeni Ödeme";
+            this.btnCreateBill.UseVisualStyleBackColor = false;
+            this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
             // 
-            // txtBillTitle
+            // btnBillList
             // 
-            this.txtBillTitle.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtBillTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBillTitle.Location = new System.Drawing.Point(157, 63);
-            this.txtBillTitle.Name = "txtBillTitle";
-            this.txtBillTitle.Size = new System.Drawing.Size(906, 37);
-            this.txtBillTitle.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(74, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 29);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Başlık:";
-            // 
-            // txtBillAmount
-            // 
-            this.txtBillAmount.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtBillAmount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBillAmount.Location = new System.Drawing.Point(157, 114);
-            this.txtBillAmount.Name = "txtBillAmount";
-            this.txtBillAmount.Size = new System.Drawing.Size(906, 37);
-            this.txtBillAmount.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(65, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 29);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Miktar:";
+            this.btnBillList.BackColor = System.Drawing.Color.Silver;
+            this.btnBillList.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBillList.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBillList.Location = new System.Drawing.Point(173, 219);
+            this.btnBillList.Name = "btnBillList";
+            this.btnBillList.Size = new System.Drawing.Size(198, 52);
+            this.btnBillList.TabIndex = 8;
+            this.btnBillList.Text = "Ödeme Listesi";
+            this.btnBillList.UseVisualStyleBackColor = false;
             // 
             // txtBillPeriod
             // 
@@ -274,56 +263,70 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Periyot:";
             // 
-            // btnBillList
+            // txtBillAmount
             // 
-            this.btnBillList.BackColor = System.Drawing.Color.Silver;
-            this.btnBillList.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBillList.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBillList.Location = new System.Drawing.Point(173, 219);
-            this.btnBillList.Name = "btnBillList";
-            this.btnBillList.Size = new System.Drawing.Size(198, 52);
-            this.btnBillList.TabIndex = 8;
-            this.btnBillList.Text = "Ödeme Listesi";
-            this.btnBillList.UseVisualStyleBackColor = false;
+            this.txtBillAmount.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtBillAmount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBillAmount.Location = new System.Drawing.Point(157, 114);
+            this.txtBillAmount.Name = "txtBillAmount";
+            this.txtBillAmount.Size = new System.Drawing.Size(906, 37);
+            this.txtBillAmount.TabIndex = 5;
             // 
-            // btnCreateBill
+            // label3
             // 
-            this.btnCreateBill.BackColor = System.Drawing.Color.Silver;
-            this.btnCreateBill.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCreateBill.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCreateBill.Location = new System.Drawing.Point(403, 219);
-            this.btnCreateBill.Name = "btnCreateBill";
-            this.btnCreateBill.Size = new System.Drawing.Size(198, 52);
-            this.btnCreateBill.TabIndex = 9;
-            this.btnCreateBill.Text = "Yeni Ödeme";
-            this.btnCreateBill.UseVisualStyleBackColor = false;
-            this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(65, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 29);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Miktar:";
             // 
-            // btnDeleteBill
+            // txtBillTitle
             // 
-            this.btnDeleteBill.BackColor = System.Drawing.Color.Silver;
-            this.btnDeleteBill.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDeleteBill.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDeleteBill.Location = new System.Drawing.Point(628, 219);
-            this.btnDeleteBill.Name = "btnDeleteBill";
-            this.btnDeleteBill.Size = new System.Drawing.Size(198, 52);
-            this.btnDeleteBill.TabIndex = 10;
-            this.btnDeleteBill.Text = "Ödeme Sil";
-            this.btnDeleteBill.UseVisualStyleBackColor = false;
-            this.btnDeleteBill.Click += new System.EventHandler(this.btnDeleteBill_Click);
+            this.txtBillTitle.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtBillTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBillTitle.Location = new System.Drawing.Point(157, 63);
+            this.txtBillTitle.Name = "txtBillTitle";
+            this.txtBillTitle.Size = new System.Drawing.Size(906, 37);
+            this.txtBillTitle.TabIndex = 3;
             // 
-            // btnUpdateBill
+            // label2
             // 
-            this.btnUpdateBill.BackColor = System.Drawing.Color.Silver;
-            this.btnUpdateBill.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUpdateBill.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdateBill.Location = new System.Drawing.Point(865, 219);
-            this.btnUpdateBill.Name = "btnUpdateBill";
-            this.btnUpdateBill.Size = new System.Drawing.Size(198, 52);
-            this.btnUpdateBill.TabIndex = 11;
-            this.btnUpdateBill.Text = "Ödeme Güncelle";
-            this.btnUpdateBill.UseVisualStyleBackColor = false;
-            this.btnUpdateBill.Click += new System.EventHandler(this.btnUpdateBill_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(74, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 29);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Başlık:";
+            // 
+            // txtBillId
+            // 
+            this.txtBillId.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtBillId.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBillId.Location = new System.Drawing.Point(157, 13);
+            this.txtBillId.Name = "txtBillId";
+            this.txtBillId.Size = new System.Drawing.Size(906, 37);
+            this.txtBillId.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(35, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ödeme Id:";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Location = new System.Drawing.Point(392, 318);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1121, 479);
+            this.panel3.TabIndex = 3;
             // 
             // dataGridView1
             // 
@@ -362,9 +365,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnFrmExit;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnFrmDashboard;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
