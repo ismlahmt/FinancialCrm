@@ -17,5 +17,11 @@ namespace FinancialCrm
             InitializeComponent();
         }
 
+        private void btnGobackSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+            this.Close();
+        }
     }
 }
