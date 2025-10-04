@@ -99,15 +99,10 @@ namespace FinancialCrm
         {
             FrmBilling frm = new FrmBilling();
             frm.Show();
-            this.Close();
+            this.Hide();
         }
 
-        private void btnFrmDashboard_Click(object sender, EventArgs e)
-        {
-            frmDashboard frm = new frmDashboard();
-            frm.Show();
-            this.Close();
-        }
+ 
 
         private void btnFrmExit_Click(object sender, EventArgs e)
         {
@@ -115,5 +110,25 @@ namespace FinancialCrm
             frm.Close();
             this.Close();
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            if (AuthManager.IsAuthenticated)
+            {
+                FrmSettings frm = new FrmSettings();
+                frm.Show();
+                this.Hide();
+            }
+            
+        }
+
+        private void btnFrmDashboard_Click(object sender, EventArgs e)
+        {
+            frmDashboard frm = new frmDashboard();
+            frm.Show();
+            this.Hide();
+        }
+
+ 
     }
 }

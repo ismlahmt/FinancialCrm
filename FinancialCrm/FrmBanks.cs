@@ -60,5 +60,19 @@ namespace FinancialCrm
             frm.Close();
             this.Close();
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBanks_Click(object sender, EventArgs e)
+        {
+            FrmBanks frm = new FrmBanks();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

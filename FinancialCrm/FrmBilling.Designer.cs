@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFrmExit = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnFrmDashboard = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -62,7 +62,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.btnFrmExit);
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnFrmDashboard);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -87,17 +87,18 @@
             this.btnFrmExit.UseVisualStyleBackColor = false;
             this.btnFrmExit.Click += new System.EventHandler(this.btnFrmExit_Click);
             // 
-            // button7
+            // btnSettings
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
-            this.button7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(69, 506);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(248, 52);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Ayarlar";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(81)))), ((int)(((byte)(124)))));
+            this.btnSettings.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSettings.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSettings.Location = new System.Drawing.Point(69, 506);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(248, 52);
+            this.btnSettings.TabIndex = 6;
+            this.btnSettings.Text = "Ayarlar";
+            this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnFrmDashboard
             // 
@@ -135,7 +136,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Giderler";
             this.button4.UseVisualStyleBackColor = false;
-//            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -366,7 +367,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnFrmExit;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnFrmDashboard;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
